@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+        <meta charset="utf-8" />
+        <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
+        {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+        {% endif %}
+        {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+        {% endif %}
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+
+<header id="banner">
+    <h1><a href="{{ SITEURL }}/"><img id="logo" src="/theme/images/pyjug.png" alt="homepage" border="0"></a></h1>
+
+
+
+  <div id="utility-menu">
+    <!-- Search Box -->
+    <div id="searchbox">
+      <form method="get" action="http://google.co.jp/search" id="searchform" name="searchform">
+        <div id="search">
+          <input type="hidden" id="domains" name="domains" value="www.python.jp" />
+          <input type="hidden" id="sitesearch" name="sitesearch" value="www.python.jp" />
+          <input type="hidden" id="sourceid" name="sourceid" value="google-search" />
+          <input type="text" class="input-text" name="q" id="q" />
+          <input type="submit" value="検索" class="input-button" name="submit" id="submit" />
+        </div>
+      </form>
+    </div>
+
+</header><!-- /#banner -->
+
+
+<div id='row'>
+
+<nav id='leftmenu'>
+<ul>
+    <li class='menuitem'><a href="/about/">Pythonとは</a></li>
+    <li class='menuitem'><a href="http://www.python.jp/doc/">和訳ドキュメント</a></li>
+    <li class='menuitem'><a href="/category/news.html">ニュース</a></li>
+    <li class='menuitem'><a href="/category/events.html">イベント</a></li>
+    <li class='menuitem'><a href="/community">コミュニティ</a></li>
+</ul>
+
+
+
+      <div class='menulink'><a href="http://www.python.org" title="Python Programming Language Official Website">公式ウェブサイト</a></div>
+
+      <div class='menulink'><a href="http://pypi.python.org/pypi" title="Pythonソフトウェアリポジトリ">Pythonパッケージインデックス</a></div>
+
+      <div class='menulink'><a href="http://www.python.org/download/releases/2.7.6/">Python 2.7.6</a></div>
+
+      <ul>
+	  <li class="menulink"><a href="http://docs.python.jp/2.7/" title="最新ドキュメント">日本語ドキュメント</a></li>
+	  <li class="menulink"><a href="https://www.python.org/download/releases/2.7.6/" title="ダウンロード">ダウンロード</a></li>
+      </ul>
+      <div class='menulink'><a href="https://www.python.org/download/releases/3.4.1/">Python 3.4.1</a></div>
+
+	<ul>
+	  <li class="menulink"><a href="http://docs.python.org/3/" title="Python 3 ドキュメント">ドキュメント</a></li>
+	  <li class="menulink"><a href="https://www.python.org/downloads/release/python-341/" title="ダウンロード">ダウンロード</a></li>
+	</ul>
+    <div class='menulink'><a style="color:#D58228; margin-top:1.5em" href="http://www.python.org/psf/donations/">Pythonに募金を！</a></div>
+    <div style="align:center; padding-top: 0.5em; padding-left: 1em">
+      <a href="/psf/donations/"><img width="116" height="42" src="/theme/images/donate.png" alt="" title="" /></a>
+    </div>
+    <div style="align:center; padding-top: 0.5em; padding-left: 2.5em">
+            <a href="http://wiki.python.org/moin/Languages"><img
+	      style="align:center"
+              width="94" height="46"
+	      src="/theme/images/worldmap.jpg" alt="[Python resources in languages other than English]" /></a>
+    </div>
+    <div style="align:center; padding-top: 0.0em; padding-left: 0em">
+       <div class="menulink"><a href="http://wiki.python.org/moin/Languages">各国語のPython情報</a></div>
+    </div>
+</nav>
+
+<div id='content'>
+
+        {% block content %}
+        {% endblock %}
+
+</div>
+
+<div id='rightbox'>
+  {% block rightbox %}
+  {% endblock %}
+
+</div>
+
+
+
+</div>
+
+
+
+        <footer id="contentinfo" class="body">
+Copyright © 2001-2014, Python Japan User's Group
+        </footer><!-- /#contentinfo -->
+</body>
+</html>
