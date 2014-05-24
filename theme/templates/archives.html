@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<section id="content" class="body">
+<div id="content" class="body">
 <h1>Archives for {{ SITENAME }}</h1>
 
 <dl>
@@ -9,5 +9,5 @@
     <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
 {% endfor %}
 </dl>
-</section>
+</div>
 {% endblock %}

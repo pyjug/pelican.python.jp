@@ -1,4 +1,4 @@
-<footer class="post-info">
+<div class="post-info">
         <abbr class="published" title="{{ article.date.isoformat() }}">
                 {{ article.locale_date }}
         </abbr>
@@ -12,4 +12,4 @@
 {% include 'taglist.html' %}
 {% import 'translations.html' as translations with context %}
 {{ translations.translations_for(article) }}
-</footer><!-- /.post-info -->
+</div><!-- /.post-info -->
