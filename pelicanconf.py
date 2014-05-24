@@ -24,7 +24,7 @@ ARTICLE_URL = '{category}/{slug}.html'
 ARTICLE_SAVE_AS  = '{category}/{slug}.html'
 
 DEFAULT_CATEGORY = "news"
-DEFAULT_PAGINATION = 3
+DEFAULT_PAGINATION = 10
 DEFAULT_ORPHANS = 2
 
 THEME = "theme"
