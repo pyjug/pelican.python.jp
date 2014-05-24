@@ -117,9 +117,9 @@ ol {
 li { margin-top: 0.5em;}
 
 .post-info {
-    float:right;
-    margin:10px;
+    margin:0px 10px 10px 0px;
     padding:5px;
+    font-size:80%;
 }
 
 .post-info p{
@@ -670,7 +670,7 @@ li[class='menulink'] {
 li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
 .hentry img{display : none ;}
-.entry-title {margin-bottom: 10px; margin-top: 0;}
+.entry-title {margin-bottom: 3px; margin-top: 0;}
 .entry-title a:link, .entry-title a:visited {text-decoration: none; color: #D58228;}
 .entry-title a:visited {background-color: #fff;}
 

@@ -9,11 +9,7 @@ SITEURL = ''
 TIMEZONE = 'Asia/Tokyo'
 
 DEFAULT_LANG = 'ja'
-DEFAULT_DATE_FORMAT = '%Y-%m-%d(%a)'
-
-
-
-
+DEFAULT_DATE_FORMAT = '%Y-%m-%d (%a) %H:%M'
 
 
 # Feed generation is usually not desired when developing
