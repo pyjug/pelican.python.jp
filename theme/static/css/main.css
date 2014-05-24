@@ -378,6 +378,11 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 /*
         Row
 *****************/
+
+#row {
+    width: 1200px;
+}
+
 #row:after{
 content : "";
 display : block;
