@@ -2,22 +2,20 @@
     {% for article in articles_page.object_list %}
 
             <div class="body">
-                <div>
+                <div class="article_summary">
                     <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
                     {% include 'article_infos.html' %}
-                    {{ article.content }}
+                    {{ article.summary }}
+
+                    <div class="btn"><a href="{{ SITEURL }}/{{ article.url }}">すべて表示 ...</a></div>
+
                 </div>
+
+
                 {% if loop.length == 1 %}
                     {% include 'pagination.html' %}
                 {% endif %}
             </div><!-- /#featured -->
-        {% if loop.last %}
-            </ol><!-- /#posts-list -->
-            {% if loop.last and (articles_page.has_previous()
-            or not articles_page.has_previous() and loop.length > 1) %}
-                {% include 'pagination.html' %}
-            {% endif %}
-        {% endif %}
     {% endfor %}
 {% else %}
 <div id="content" class="body">

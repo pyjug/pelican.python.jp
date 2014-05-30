@@ -176,7 +176,7 @@ aside, nav, article, figure {
 }
 
 /***** Layout *****/
-.body {clear: both; margin: 0 auto; width: 800px;}
+.body {clear: both; margin: 0 auto;}
 img.right, figure.right {float: right; margin: 0 0 2em 2em;}
 img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 
@@ -657,7 +657,10 @@ li[class='menulink'] {
 /*
         Footer
 *****************/
-#contentinfo {padding-bottom: 2em; text-align: right;}
+#contentinfo {
+    padding-bottom: 2em; text-align: right;
+    font-size:90%;
+    }
 
 /***** Sections *****/
 /* Blog */
@@ -667,6 +670,11 @@ li[class='menulink'] {
         border-bottom: 1px solid #eee;
         padding: 1.5em 0;
 }
+
+.article_summary {
+    margin-bottom: 1em;
+}
+
 li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
 .hentry img{display : none ;}
@@ -744,3 +752,39 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
     
         #add-comment input[type='submit'] {float: right; margin: 0 .5em;}
         #add-comment * {margin-bottom: .5em;}
+
+
+
+
+.btn {
+display: inline-block;
+font-weight: bold;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid #ccc;
+white-space: nowrap;
+padding: 3px;
+margin-top: 0.5em;
+font-size: 12px;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+.article_summary .btn a {
+    border: none;
+}
+
+
+.paginator {
+    font-weight: bold;
+    padding: 3px;
+    margin-top: 0.5em;
+    font-size: 12px;
+    text-align: center;
+}

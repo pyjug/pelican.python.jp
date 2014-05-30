@@ -4,6 +4,7 @@
 
 
 
+{% if not articles_page.has_previous() %}
 
 
 <h1>プログラミング言語 Python</h1>
@@ -12,6 +13,8 @@
 <p>PythonはOSIに認証された <a class="reference external" href="http://www.python.org/psf/license/">オープンソースライセンス</a> で公開されており、商用製品の開発にも無料で利用できます。</p>
 
 <hr/>
+
+{% endif %}
 
 {% include 'articles.html' %}
 
