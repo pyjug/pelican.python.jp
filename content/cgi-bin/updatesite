@@ -1,0 +1,9 @@
+#! /bin/sh
+echo "Contnt-type: text/plain"
+echo
+source /var/www/pelican_env/env/bin/activate
+cd /var/www/pelican_env/pelican.python.jp
+git checkout .
+git pull
+make publish 2>&1
+cp -rf output/* /var/www/pelican/

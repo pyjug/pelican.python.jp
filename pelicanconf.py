@@ -37,7 +37,7 @@ PAGINATION_PATTERNS = [
     (2, '{name}_{number}.html', '{name}_{number}.html'),
 ]
 
-STATIC_PATHS = ['images', 'images/favicon.ico']
+STATIC_PATHS = ['images', 'images/favicon.ico', 'cgi-bin']
 EXTRA_PATH_METADATA = {
         'images/favicon.ico': {'path': 'favicon.ico'},
 }
