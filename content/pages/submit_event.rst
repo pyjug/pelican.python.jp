@@ -3,6 +3,7 @@ Python関連イベントの告知など
 
 :url: events
 :save_as: events/submit.html
+:category: events
 
 Python関連のイベントなどの掲載は、下記Formからお申込みください。
 
@@ -39,6 +40,8 @@ Python関連のイベントなどの掲載は、下記Formからお申込みく�
 
     </script>
 
+イベント登録フォーム
++++++++++++++++++++++++
 
 .. raw:: html
 
@@ -57,7 +60,7 @@ Python関連のイベントなどの掲載は、下記Formからお申込みく�
         <input name="url" id="input_url" size=80><br/>
 
         <label>概要 <i>(rest形式・必須)</i></label><br/>
-        <textarea name="desc" id="input_desc" cols="80" rows="10"></textarea><br>
+        <textarea name="desc" id="input_desc" rows="10" cols="40"></textarea><br>
 
         <label>連絡用メールアドレス <i>(必須)</i></label> (イベント情報には掲載されません)<br/>
         <input name="mailaddr" size=80><br/>
