@@ -88,12 +88,12 @@ def sendmail(reqid):
     return True
 
 def main():
-    form = cgi.FieldStorage()
-
     print("Content-Type: text/html")
     print()
 
     print('''<meta http-equiv="Content-type" content="text/html;charset=UTF-8">''')
+
+    form = cgi.FieldStorage()
 
     reqid = form.getfirst('reqid', '').strip()
 

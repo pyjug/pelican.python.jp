@@ -97,15 +97,16 @@ def sendmail(mailaddr, title, event_url, date, desc, url):
     return True
 
 def main():
+    print("Content-Type: text/html")
+    print()
+
+    print('''<meta http-equiv="Content-type" content="text/html;charset=UTF-8">''')
+
     if os.environ['REQUEST_METHOD'] != 'POST':
         return
         
     form = cgi.FieldStorage()
 
-    print("Content-Type: text/html")
-    print()
-
-    print('''<meta http-equiv="Content-type" content="text/html;charset=UTF-8">''')
 
     ret = check(form)
     if not ret:
