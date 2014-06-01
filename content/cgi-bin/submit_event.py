@@ -10,7 +10,6 @@ from email.header import Header
 
 
 JSON_DIR = '/var/www/connpass-reqs/'
-JSON_DIR = '/Users/ishimoto/src/newjp/a'
 VALID_CHARS = set("!#$%&'*+-/=?^_`{|}~.@"+string.ascii_letters+string.digits)
 SENDMAIL = '/usr/sbin/sendmail'
 

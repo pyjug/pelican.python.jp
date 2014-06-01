@@ -14,10 +14,8 @@ from email.encoders import encode_base64
 
 
 JSON_DIR = '/var/www/connpass-reqs/'
-JSON_DIR = '/Users/ishimoto/src/newjp/a'
 SENDMAIL = '/usr/sbin/sendmail'
 MAILADDR = 'ishimoto@gembook.org'
-MAILADDR = 'ishimoto'
 
 def check(reqid):
     if not re.match(r'[0-9a-hA-H]+', reqid):
