@@ -64,7 +64,7 @@ Python.jpサイトへの、ニュース掲載リクエストを受け取りま�
 
     %s
 
-ご質問などがありましたら、 contact-pyjug@python.jp までご連絡ください。
+ご質問などがありましたら、 pyjug-contact@python.jp までご連絡ください。
 
 
 %s
