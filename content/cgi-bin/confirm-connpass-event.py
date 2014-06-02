@@ -36,14 +36,18 @@ def to_rest(rec):
 {title}
 ==========================================================================
 
-:イベントurl: {url}
-:イベント日付: {date}
+:date: {now}
+
+日付
+    {date}
+イベントurl
+    {url}
 
 {desc}
 
 """
 
-    return templ.format(**rec)
+    return templ.format(now=datetime.datetime.now().strftime('%Y/%m/%d %H:%M'), **rec)
 
 
 msg = u'''
