@@ -118,8 +118,8 @@ def main():
 
     filename = save(mailaddr, title, url, date, desc)
 
-    url = 'http://www.python.jp/cgi-bin/confirm-connpass-event.py?reqid=%s' % filename
-    if not sendmail(mailaddr, title, url, date, desc, url):
+    conf_url = 'http://www.python.jp/cgi-bin/confirm-connpass-event.py?reqid=%s' % filename
+    if not sendmail(mailaddr, title, url, date, desc, conf_url):
         return
 
     print('確認用のメールを送信しました。ご確認の上、登録を確定してください')
