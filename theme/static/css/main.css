@@ -130,7 +130,7 @@ li { margin-top: 0.5em;}
 .readmore { float: right }
 
 dl {margin: 0 0 1.5em 0;}
-dt {font-weight: bold;}
+dt {font-weight: bold; margin-top: 1.0em;}
 dd {margin-left: 1.5em;}
 
 pre{background-color:  rgb(238, 238, 238); padding: 10px; margin: 10px; overflow: auto;}

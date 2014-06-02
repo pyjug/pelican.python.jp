@@ -53,8 +53,11 @@ def make_src(mailaddr, title, url, date, desc):
 {title}
 ==========================================================================
 
-:イベントurl: {url}
-:イベント日付: {date}
+日付:
+    {date}
+
+URL:
+    {url}
 
 {desc}
 
