@@ -61,6 +61,9 @@
     <li class='menuitem'><a href="/about/">Pythonとは</a></li>
     <li class='menuitem'><a href="http://www.python.jp/doc/">和訳ドキュメント</a></li>
     <li class='menuitem'><a href="/category/news.html">ニュース</a></li>
+    {% if category == 'news' or page and page.category == 'news' %}
+    <div class='menuitem submenuitem'><a href='/news/submit.html'>ニュースを投稿する</a></div>
+    {% endif %}
     <li class='menuitem'><a href="/category/events.html">イベント</a></li>
     {% if category == 'events' or page and page.category == 'events' %}
     <div class='menuitem submenuitem'><a href='/events/submit.html'>イベントを投稿する</a></div>

@@ -794,3 +794,18 @@ user-select: none;
     font-size: 12px;
     text-align: center;
 }
+
+.submit_event p {
+    margin-top: 1em;
+}
+
+.submit_event label {
+    font-weight: bold;
+}
+
+.submit_event .form_sample {
+    font-style:italic;
+    text-color: #4B5A6A;
+    font-size: 75%;
+}
+
