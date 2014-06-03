@@ -40,7 +40,7 @@ def to_rest(rec):
 
 日付
     {date}
-イベントurl
+URL
     {url}
 
 {desc}
