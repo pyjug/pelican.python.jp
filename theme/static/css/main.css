@@ -103,10 +103,14 @@ h1 a:hover {
 strong, b {font-weight: bold;}
 em, i {font-style: italic;}
 
+p {
+    margin-bottom: .5em;
+}
+
 /* Lists */
 ul {
         list-style: outside disc;
-        margin: 0em 0 0 1.5em;
+        margin: 0em 0 1em 1.5em;
 }
 
 ol {
