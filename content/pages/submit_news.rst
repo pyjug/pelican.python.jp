@@ -1,7 +1,7 @@
 Python関連ニュースなどの登録
 ------------------------------------
 
-:url: news
+:url: news/submit.html
 :save_as: news/submit.html
 :category: news
 

@@ -1,7 +1,7 @@
 Python関連イベントの告知など
 ------------------------------------
 
-:url: events
+:url: events/submit.html
 :save_as: events/submit.html
 :category: events
 
