@@ -48,9 +48,11 @@ Python関連のイベントなどの掲載は、下記フォームからお申�
     <form method="POST" action="/cgi-bin/submit_event.py" class='submit_event'>
         <p>
         <label>connpass.com イベントID <i>(オブション)</i></label><br/>
-        <span class='form_sample'>・<a href='http://connpass.com/'>connpass.com</a> から、イベントの情報を取得して登録できます。</span><br/>
+        <span class='form_sample'>・<a href='http://connpass.com/'>connpass.com</a> から、イベントの情報を取得して登録できます。
+
+        </span><br/>
         <input name="eventid"> <span id="connpass_title"></span> <br/>
-        <span class='form_sample'> 例: 00001 </span> <br/>
+        <span class='form_sample'> 例: イベントのURLが <code>http://connpass.com/event/00001/</code> の場合、<code><b>00001</b></code> がイベントIDとなります。</span> <br/>
         </p>
 
         <p>
