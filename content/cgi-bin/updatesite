@@ -6,4 +6,5 @@ cd /var/www/pelican_env/pelican.python.jp
 git checkout .
 git pull
 make publish 2>&1
+rm -rf /var/www/pelican/drafts
 cp -rf output/* /var/www/pelican/
