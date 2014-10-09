@@ -19,10 +19,10 @@ VC++を利用する場合
 インストール順序
 -------------------------
 
-- Windows SDK 7.1
+- `Windows SDK 7.1 <http://www.microsoft.com/en-us/download/details.aspx?id=8279>`_
 - Visual C++ 2010 express
-- Visual C++ 2010 sp1
-- Windows SDK 7.1 用 Microsoft Visual C++ 2010 Service Pack 1 コンパイラ更新プログラム
+- `Visual C++ 2010 sp1 <http://www.microsoft.com/ja-jp/download/details.aspx?id=23691>`_
+- `Windows SDK 7.1 用 Microsoft Visual C++ 2010 Service Pack 1 コンパイラ更新プログラム <http://www.microsoft.com/ja-JP/download/details.aspx?id=4422>`_
 - vcvars64.bat
 
 注意点
