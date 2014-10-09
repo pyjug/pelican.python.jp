@@ -6,17 +6,51 @@ Windowsで64bitコンパイラを使う
 
 .. todo::
 
- - Python2.7 VC9
  - vcvars64.bat の置き場所
  - 確認方法
  
    - 環境変数
    - レジストリ
 
-Python3.4でVC++を利用する場合
+
+Pythonがビルドに利用しているWindowsのコンパイラとランタイムライブラリ
+============================================================================
+
++------------------+-----+------------+------------+------------+
+| Pythonバージョン | SDK | コンパイラ | Visual C++ | ランタイム |
++==================+=====+============+============+============+
+| 2.7              | 6.1 | MSC v.1500 | 2008       | msvcr90    |
++------------------+-----+------------+------------+------------+
+| 3.3, 3.4         | 7.1 | MSC v.1600 | 2010       | msvcr100   |
++------------------+-----+------------+------------+------------+
+
+コンパイラの入手方法
+-----------------------------
+
+Visual C++ Express の各バージョンをインストールするとVCコンパイラ(cl.exe)も一緒にインストールされます。
+しかし、これらのコンパイラは32bit版であるため、64bit版のVCコンパイラを利用するには、別途SDKをインストールします。
+
+- Windows SDK for Windows Server 2008 and .NET Framework 3.5
+- Microsoft Windows SDK for Windows 7 and .NET Framework 4
+- `Microsoft Visual C++ Compiler for Python 2.7 <http://aka.ms/vcpython27>`_
+
+Python2.7
+=========================================
+
+Windows SDK 6.1
+------------------------------
+
+Microsoft Visual C++ Compiler for Python 2.7
+-------------------------------------------------------
+
+setuptools 6.0以上が必要です。
+
+- `Detect and use Microsoft Visual C++ Compilers for Python 2.7 package <https://bitbucket.org/pypa/setuptools/issue/258/detect-and-use-microsoft-visual-c>`_
+
+Python3.4
 ======================================
 
-インストール順序
+Windows SDK7.1
 -------------------------
 
 - `Microsoft Windows SDK for Windows 7 and .NET Framework 4 <http://www.microsoft.com/en-us/download/details.aspx?id=8279>`_
@@ -33,10 +67,3 @@ Python3.4でVC++を利用する場合
 - VC2010SP1をインストールすると64bitコンパイラが消えてしまいます。
 - 修正プログラムにより、コンパイラが復活します。
 - VC2010 ExpressやSDKにはvcvars64.batというコンパイラの環境変数を設定するファイルが入っていないため、独自に用意しなければなりません。
-
-mingw
-===============
-
-
-distutils がどのようにコンパイラを決定するか
-================================================
