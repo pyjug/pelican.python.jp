@@ -105,4 +105,8 @@ Windows SDK7.1
 参考文献
 ====================
 
-- https://gist.github.com/shimizukawa/4969766
+- `PIL(Pillow) build on Windows (32bit & 64bit) <https://gist.github.com/shimizukawa/4969766>`_
+- `Building C and C++ Extensions on Windows <https://docs.python.org/3.4/extending/windows.html>`_
+
+  - `上記の和訳 <http://docs.python.jp/3.4/extending/windows.html>`_
+  - `2.7の和訳 <http://docs.python.jp/2/extending/windows.html>`_
