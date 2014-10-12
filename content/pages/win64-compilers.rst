@@ -54,7 +54,14 @@ setuptools 6.0以上が必要です。
 
 - `Detect and use Microsoft Visual C++ Compilers for Python 2.7 package <https://bitbucket.org/pypa/setuptools/issue/258/detect-and-use-microsoft-visual-c>`_
 
-amd64 の場合に環境変数の設定が足らずにエラーが発生してしまいます。
+setuptoolsのアップグレード::
+
+ pip install -U setuptools 
+
+エラーの対応
+--------------------
+
+9/29/2014以降にダウンロードした場合は修正されていますが、 amd64 の場合に環境変数の設定が足らずにエラーが発生する場合があります。
 以下のエラーが出る場合は ``vcvarsall.bat`` ファイル(通常 ``C:\Users\{ユーザー名}\AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0`` 以下にインストールされています)を修正します。
 
 エラー::
