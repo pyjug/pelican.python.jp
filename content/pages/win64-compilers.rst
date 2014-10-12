@@ -7,10 +7,6 @@ Windowsで64bitコンパイラを使う
 .. todo::
 
  - vcvars64.bat の置き場所
- - 確認方法
- 
-   - 環境変数
-   - レジストリ
 
 
 Pythonがビルドに利用しているWindowsのコンパイラとランタイムライブラリ
@@ -43,12 +39,13 @@ Python2.7対応のC拡張ライブラリをコンパイルするためにはMSC 
 setuptools>=6.0 であれば、こちらのコンパイラを認識するようになっているようです。
 
 
-Windows SDK 6.1
-------------------------------
+.. Windows SDK 6.1
+.. ------------------------------
+.. 
+.. - VC 2008 Express
+.. - SDK 6.1
+.. - vcvars64.bat
 
-- VC 2008 Express
-- SDK 6.1
-- vcvars64.bat
 
 Microsoft Visual C++ Compiler for Python 2.7
 -------------------------------------------------------
@@ -56,6 +53,28 @@ Microsoft Visual C++ Compiler for Python 2.7
 setuptools 6.0以上が必要です。
 
 - `Detect and use Microsoft Visual C++ Compilers for Python 2.7 package <https://bitbucket.org/pypa/setuptools/issue/258/detect-and-use-microsoft-visual-c>`_
+
+amd64 の場合に環境変数の設定が足らずにエラーが発生してしまいます。
+以下のエラーが出る場合は ``vcvarsall.bat`` ファイル(通常 ``C:\Users\{ユーザー名}\AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0`` 以下にインストールされています)を修正します。
+
+エラー::
+
+  ValueError: [u'path', u'include', u'lib']
+
+vcvarsall.bat::
+
+  :amd64
+  echo Setting environment for using Microsoft Visual Studio 2008 x64 tools.
+  set VCINSTALLDIR=%~dp0VC\
+  set WindowsSdkDir=%~dp0WinSDK\
+  if not exist "%VCINSTALLDIR%Bin\amd64\cl.exe" goto missing
+  set PATH=%VCINSTALLDIR%Bin\amd64;%WindowsSdkDir%Bin\x64;%WindowsSdkDir%Bin;%PATH%
+  set INCLUDE=%VCINSTALLDIR%Include;%WindowsSdkDir%Include;%INCLUDE%
+  set LIB=%VCINSTALLDIR%Lib\amd64;%WindowsSdkDir%Lib\x64;%LIB%
+  set LIBPATH=%VCINSTALLDIR%Lib\amd64;%WindowsSdkDir%Lib\x64;%LIB%
+  goto :eof
+
+LIBPATHをsetしてる行を追加してください。内容はその上の行のLIBの設定と同じです。
 
 Python3.4
 ======================================
