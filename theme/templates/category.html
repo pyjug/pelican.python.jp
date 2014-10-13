@@ -8,3 +8,25 @@
 
 
 {% block title %}{{ SITENAME }} - {{ category }}{% endblock %}
+
+
+{% block rightbox %}
+
+{% if category == 'events' %}
+
+<div class="homepage-box">
+<h4>イベント募集！</h4>
+<p>Python関連イベントなどの告知を掲載します。詳細は<a href='/events/submit.html'>掲載依頼</a>をご参照ください。</p>
+</div>
+{% endif %}
+
+{% if category == 'news' %}
+
+<div class="homepage-box">
+<h4>ニュース募集！</h4>
+<p>Python関連ニュースを掲載します。詳細は<a href='/news/submit.html'>掲載依頼</a>をご参照ください。</p>
+</div>
+{% endif %}
+
+
+{% endblock %}
