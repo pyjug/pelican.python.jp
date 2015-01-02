@@ -5,7 +5,7 @@ Python 2.7.9 リリース
 :date: 2014-12-21 23:00:00
 
 
-Python 2.7 系の最新リリース `Python 2.7.0 <https://www.python.org/downloads/release/python-279/>`_ が公開されました。
+Python 2.7 系の最新リリース `Python 2.7.9 <https://www.python.org/downloads/release/python-279/>`_ が公開されました。
 
 このリリースでの主な修正内容は以下のとおりです。
 
