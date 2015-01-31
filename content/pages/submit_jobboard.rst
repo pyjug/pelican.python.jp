@@ -34,7 +34,7 @@ Pythonプログラマの求人情報を掲載します。
         <span class='form_sample'> 例: http://www.example.com/banner.gif</span></p>
 
         <p>
-        <label>紹介文 <i>(800文字程度・reStructuredText形式・必須)</i></label><br/>
+        <label>紹介文 <i>(reStructuredText形式・必須)</i></label><br/>
         <textarea name="desc" id="input_desc" rows="10" cols="40"></textarea><br/>
 
     例:

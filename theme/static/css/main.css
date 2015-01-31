@@ -82,6 +82,11 @@ a {
     color: #551A8B;
 }
 a img {border: 0px; text-decoration: none;}
+
+a.image-reference:link {
+  border-bottom: none;
+}
+
 a:link, a:visited {
         color: #551A8B;
         padding: 0 1px;

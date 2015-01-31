@@ -28,7 +28,7 @@ def check(form):
         print ('URLを指定してください')
         return
 
-    if not desc or len(desc) > 1500:
+    if not desc:
         print ('紹介文を指定してください')
         return
 
