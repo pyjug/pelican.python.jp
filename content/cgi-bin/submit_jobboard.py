@@ -15,27 +15,35 @@ SENDMAIL = '/usr/sbin/sendmail'
 
 def check(form):
     mailaddr = form.getfirst('mailaddr', '').strip()
-    title = form.getfirst('title', '').strip()
+    name = form.getfirst('name', '').strip()
+    url = form.getfirst('url', '').strip()[:80]
+    banner = form.getfirst('banner', '').strip()[:80]
     desc = form.getfirst('desc', '').strip()
+
+    if not name or len(name) > 80:
+        print ('名前を指定してください')
+        return
+
+    if not url or len(url) > 255:
+        print ('URLを指定してください')
+        return
+
+    if not desc or len(desc) > 1500:
+        print ('紹介文を指定してください')
+        return
 
     if not mailaddr or not set(mailaddr).issubset(VALID_CHARS) or len(mailaddr) > 80:
         print ('メールアドレスが正しくありません')
         return
 
-    if not title or len(title) > 80:
-        print ('タイトルを指定してください')
-        return
+    return  mailaddr, name, url, banner,  desc
 
-    if not desc or len(desc) > 4096:
-        print ('概要を指定してください')
-        return
-
-    return  mailaddr, title, desc
-
-def save(mailaddr, title, desc):
+def save(mailaddr, name, url, banner, desc):
     d = {
         'mailaddr':mailaddr,
-        'title':title,
+        'name':name,
+        'url':url,
+        'banner':url,
         'desc':desc,
     }
     hash = hashlib.sha1((str(time.time())+str(d)).encode('utf-8')).hexdigest()
@@ -44,21 +52,28 @@ def save(mailaddr, title, desc):
     return hash
 
 
-def make_src(mailaddr, title, desc):
+def make_src(mailaddr, name, url, banner, desc):
     templ = """
-{title}
+{name}
 ==========================================================================
+
+
+URL:
+    {url}
+
+バナーURL:
+    {banner}
 
 {desc}
 
 """
 
-    return templ.format(title=title, desc=desc)
+    return templ.format(name=name, url=url, banner=banner, desc=desc)
 
 
 msg = u'''
 
-Python.jpサイトへの、ニュース掲載リクエストを受け取りました。
+Python.jpサイトへの、求人情報掲載リクエストを受け取りました。
 
 確認のため、以下のURLにアクセスしてリクエストを確定してください。
 
@@ -71,14 +86,14 @@ Python.jpサイトへの、ニュース掲載リクエストを受け取りま�
 
 '''
 
-def sendmail(mailaddr, title, desc, url):
+def sendmail(mailaddr, name, event_url, date, desc, url):
 
-    src = make_src(mailaddr, title, desc)
+    src = make_src(mailaddr, name, event_url, date, desc)
 
     mail = MIMEText(msg % (url, src), _charset='utf-8')
     mail['From'] = 'noreply@python.jp'
     mail['To'] = mailaddr
-    mail['Subject'] = Header(u'Python.jp ニュース登録の確認', 'utf-8')
+    mail['Subject'] = Header(u'Python.jp イベント登録の確認', 'utf-8')
     p = subprocess.Popen([SENDMAIL, mailaddr], stdin=subprocess.PIPE,
                          stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     o, e =  p.communicate(mail.as_string().encode('utf=8'))
@@ -104,12 +119,12 @@ def main():
     if not ret:
         return
 
-    mailaddr, title, desc = ret
+    mailaddr, name, url, date, desc = ret
 
-    filename = save(mailaddr, title, desc)
+    filename = save(mailaddr, name, url, date, desc)
 
-    url = 'http://www.python.jp/cgi-bin/confirm-news.py?reqid=%s' % filename
-    if not sendmail(mailaddr, title, desc, url):
+    conf_url = 'http://www.python.jp/cgi-bin/confirm-jobboard.py?reqid=%s' % filename
+    if not sendmail(mailaddr, name, url, date, desc, conf_url):
         return
 
     print('確認用のメールを送信しました。ご確認の上、登録を確定してください')

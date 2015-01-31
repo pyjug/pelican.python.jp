@@ -73,7 +73,7 @@ Python関連のイベントなどの掲載は、下記フォームからお申�
         </p>
 
         <p>
-        <label>概要 <i>(rest形式・必須)</i></label><br/>
+        <label>概要 <i>(reStructuredText形式・必須)</i></label><br/>
         <textarea name="desc" id="input_desc" rows="10" cols="40"></textarea><br/>
 
         <span class='form_sample'> 例: だれでも参加できる、Pythonの勉強会です。<br/>

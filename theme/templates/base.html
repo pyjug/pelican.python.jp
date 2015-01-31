@@ -83,8 +83,14 @@ document.write(unescape("%3Cscript src='" + baseURL +
     {% if category == 'events' or page and page.category == 'events' %}
     <div class='menuitem submenuitem'><a href='/events/submit.html'>イベントを投稿する</a></div>
     {% endif %}
+<!--
+    <li class='menuitem'><a href="/category/jobboard.html">求人情報</a></li>
+    {% if category == 'jobboard' or page and page.category == 'jobboard' %}
+    <div class='menuitem submenuitem'><a href='/jobboard/submit.html'>求人情報を投稿する</a></div>
+    {% endif %}
+-->
     <li class='menuitem'><a href="/community">コミュニティ</a></li>
-    <li class='menuitem'><a href="/category/contrib.html">contrib</a></li>
+    <li class='menuitem'><a href="/category/contrib.html">その他</a></li>
 </ul>
 
 
@@ -140,7 +146,7 @@ document.write(unescape("%3Cscript src='" + baseURL +
 
 
         <div id="contentinfo" class="body">
-Copyright © 2001-2014, Python Japan User's Group
+Copyright © 2001-2015, Python.jp
         </div><!-- /#contentinfo -->
 </body>
 </html>
