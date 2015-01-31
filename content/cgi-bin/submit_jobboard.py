@@ -93,7 +93,7 @@ def sendmail(mailaddr, name, event_url, date, desc, url):
     mail = MIMEText(msg % (url, src), _charset='utf-8')
     mail['From'] = 'noreply@python.jp'
     mail['To'] = mailaddr
-    mail['Subject'] = Header(u'Python.jp イベント登録の確認', 'utf-8')
+    mail['Subject'] = Header(u'Python.jp 求人情報登録の確認', 'utf-8')
     p = subprocess.Popen([SENDMAIL, mailaddr], stdin=subprocess.PIPE,
                          stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     o, e =  p.communicate(mail.as_string().encode('utf=8'))
