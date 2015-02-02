@@ -2,7 +2,6 @@
 ==========================================================================
 
 :date: 2015/02/2 11:00
-:status: draft
 
 .. image:: /images/jobboard/beproud.png
    :target: http://www.beproud.jp
