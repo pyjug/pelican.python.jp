@@ -1,0 +1,27 @@
+
+Raspberry Pi, BeagleBone Black紹介セミナー　＠Pythonでプログラミング
+==========================================================================
+
+:date: 2015/02/05 17:41
+
+日付
+    2015/2/21 (土)
+URL
+    http://peatix.com/user/567660/view
+
+毎回好評を頂いている「Raspberry Pi, BeagleBone Black紹介セミナー」です。
+
+紹介セミナーではRaspberry Pi, BeagleBone Blackといったマイコンをプラットフォームとして
+
+pythonのプログラムを実行することで電子工作の実演を行います。Pythonを使ってデバイスを制御することで、
+
+プログラミングと電子工作の両方を一挙に楽しむことが出来ます。
+
+Raspberry Pi, BeagleBone Blackに興味がある、Pythonでのプログラミングを学びたいと思っている方、是非ご参加ください！
+
+詳細につきましては以下URLにございますので、ご確認下さい。
+
+http://peatix.com/user/567660/view
+
+皆様のご参加をお待ちしております。
+
