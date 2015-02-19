@@ -43,7 +43,7 @@ def save(mailaddr, name, url, banner, desc):
         'mailaddr':mailaddr,
         'name':name,
         'url':url,
-        'banner':url,
+        'banner':banner,
         'desc':desc,
     }
     hash = hashlib.sha1((str(time.time())+str(d)).encode('utf-8')).hexdigest()
