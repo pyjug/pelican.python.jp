@@ -2,8 +2,7 @@
 【求人情報】カタリズム株式会社
 ==========================================================================
 
-:date: 2015/02/19 00:04
-:status: draft
+:date: 2015/02/20 13:30
 
 .. image:: /images/jobboard/catarizm.png
    :target: http://www.catarizm.co.jp
