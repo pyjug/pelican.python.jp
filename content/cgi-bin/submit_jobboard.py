@@ -2,6 +2,7 @@
 # -*- coding: utf-8
 import logging
 import cgitb
+import re
 cgitb.enable()
 
 import os, sys, cgi, re, json, string, hashlib, os, time, subprocess
@@ -31,6 +32,11 @@ def check(form):
     if not desc:
         print ('紹介文を指定してください')
         return
+
+    if not re.search(r'[あ-ん]', desc):
+        print ('紹介文を指定してください')
+        return
+
 
     if not mailaddr or not set(mailaddr).issubset(VALID_CHARS) or len(mailaddr) > 80:
         print ('メールアドレスが正しくありません')
