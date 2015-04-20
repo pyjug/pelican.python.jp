@@ -6,7 +6,7 @@
 .. image:: /images/jobboard/cayto.png
    :target: http://cayto.jp/
    :alt: カイト株式会社
-   :width: 400px;
+   :width: 400px
 
 当社では、現在Python&AngularJS のプログラマーを募集しています。
 
