@@ -7,7 +7,7 @@
 .. image:: /images/jobboard/squeeze.png
    :target: http://www.squeeze-inc.co.jp/
    :alt: 株式会社SQUEEZE
-
+   :width: 400px;
 
 
 自社サービス『Mister Suite（ミスタースイート）』に関連する各種Webアプリケーションの開発をして行って頂きます。
