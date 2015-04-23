@@ -5,7 +5,7 @@
 :status: draft
 
 .. image:: /images/jobboard/xxxx
-   :target: http://cayto.jp/
+   :target: http://www.squeeze-inc.co.jp/
    :alt: 株式会社SQUEEZE
    :width: 400px
 
