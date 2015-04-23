@@ -70,9 +70,11 @@ H4
 }
 
     
-hr { border: 2px solid #FFBC29; }
+hr { border: 2px solid #B4BDAB; }
 
-
+.about {
+    margin-bottom:2em;
+}
 
 
 
@@ -690,7 +692,7 @@ li[class='menulink'] {
     margin-bottom: 1em;
     padding-bottom: 2em;
 
-    border-bottom: 4px solid #eee;
+    border-bottom: 2px solid #B4BDAB;
 }
 
 li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
