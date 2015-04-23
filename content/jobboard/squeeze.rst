@@ -4,7 +4,7 @@
 :date: 2015/04/23 23:30
 :status: draft
 
-.. image:: /images/jobboard/sqeeze.png
+.. image:: /images/jobboard/squeeze.png
    :target: http://www.squeeze-inc.co.jp/
    :alt: 株式会社SQUEEZE
 
