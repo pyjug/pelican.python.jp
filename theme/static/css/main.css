@@ -70,7 +70,7 @@ H4
 }
 
     
-hr { border: 2px solid #EEEEEE; }
+hr { border: 2px solid #FFBC29; }
 
 
 
@@ -688,6 +688,9 @@ li[class='menulink'] {
 
 .article_summary {
     margin-bottom: 1em;
+    padding-bottom: 2em;
+
+    border-bottom: 4px solid #eee;
 }
 
 li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
@@ -700,7 +703,7 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 }
 .entry-title a:link, .entry-title a:visited {
     text-decoration: none; 
-    color: #E22121;
+    color: #376A94
 }
 .entry-title a:visited {background-color: #fff;}
 
