@@ -695,6 +695,10 @@ li[class='menulink'] {
     border-bottom: 2px solid #B4BDAB;
 }
 
+.entry-title img {
+  margin-right: 5px;
+}
+
 li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
 .hentry img{display : none ;}
