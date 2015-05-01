@@ -3,7 +3,6 @@
 ==========================================================================
 
 :date: 2015/02/20 13:30
-:status: draft
 
 .. image:: /images/jobboard/tyrus_logo.png
    :target: http://www.tyrus.co.jp/
