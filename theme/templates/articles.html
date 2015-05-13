@@ -3,8 +3,11 @@
 
             <div class="body">
                 <div class="article_summary">
+                    <div>
+                      {% include 'article_infos.html' %}
+                    </div>
+
                     <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}"><img src='/theme/images/pyjug-16.png' class='pyjug_tao' />{{ article.title }}</a></h1>
-                    {% include 'article_infos.html' %}
                     {{ article.summary }}
 
                     <div class="btn"><a href="{{ SITEURL }}/{{ article.url }}">すべて表示 ...</a></div>
