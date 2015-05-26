@@ -80,21 +80,17 @@ hr { border: 1px solid #f0f0f0; }
 
 /* Anchors */
 a {
-    outline: 0;
-    color: #551A8B;
+    color: #0486BE;
+    font-weight: bold;
+    text-decoration: None;
 }
+
 a img {border: 0px; text-decoration: none;}
 
 a.image-reference:link {
   border-bottom: none;
 }
 
-a:link, a:visited {
-        color: #551A8B;
-        padding: 0 1px;
-        text-decoration: None;
-        border-bottom:1px dashed #ccc;
-}
 
 a:hover, a:active {
 /*      background-color: #C74350;
@@ -809,6 +805,10 @@ user-select: none;
 
 .article_summary .btn a {
     border: none;
+}
+
+.article_summary_body {
+    margin-left: 1em;
 }
 
 
