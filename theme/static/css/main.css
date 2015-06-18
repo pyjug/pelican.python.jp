@@ -21,7 +21,7 @@ body {
     color: #000305;
     font-size: 100%; /* Base font size: 14px */
 
-    font-family: Arial, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック', sans-serif;
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Arial, 'ＭＳ Ｐゴシック', sans-serif;
 
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@ body {
 
 H1,H2,H3,H4,H5 {
 /*  font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif; */
-  font-family: Arial, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック', sans-serif;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Arial, 'ＭＳ Ｐゴシック', sans-serif;
   font-weight:normal;
   line-height: 1.5em;
 }
@@ -275,7 +275,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
   width:400px;
   z-index: 1;
   font-size: 88%;
-  font-family: Arial, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック', sans-serif;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Arial, 'ＭＳ Ｐゴシック', sans-serif;
 }
 
 #utility-menu a
@@ -334,7 +334,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 {
   color: #223344;
 /*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
-  font-family: Arial, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック', sans-serif;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Arial, 'ＭＳ Ｐゴシック', sans-serif;
   font-weight: bold;
   font-size: 103%;
   border-top: 1px solid #C4CCCC;
@@ -519,7 +519,7 @@ li[class='menulink'] {
 
 .homepage-box
 {
-  font-family: Arial, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック', sans-serif;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Arial, 'ＭＳ Ｐゴシック', sans-serif;
   font-size:  70%;
   text-align: left;
   color: #3C4B6B;
@@ -538,7 +538,7 @@ li[class='menulink'] {
 .homepage-box h4
 {
 /*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
-  font-family: Arial, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック', sans-serif;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Arial, 'ＭＳ Ｐゴシック', sans-serif;
   font-size: 94%;
   font-weight: bold;
   padding: 3px 0 4px 12px;
