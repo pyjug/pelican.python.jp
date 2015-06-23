@@ -2,7 +2,6 @@
 ==========================================================================
 
 :date: 2015/06/27 11:00
-:status: draft
 
 .. image:: /images/jobboard/fourm.png
    :target: http://fourm.jp
