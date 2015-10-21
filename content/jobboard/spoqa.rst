@@ -65,3 +65,4 @@
 * 急速に変化を続けるITデザイントレンドを学ぶ強い意欲をお持ちの方 
 * 日韓バイリンガルの方
 
+オフィスの写真や応募等詳細はWANTEDLYのページ（https://www.wantedly.com/companies/dodopoint/info）をご確認ください。
