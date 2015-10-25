@@ -2,7 +2,7 @@
 ==========================================================================
 
 :date: 2015/10/21 14:00
-:status: draft
+
 
 .. image:: /images/jobboard/spoqa.png
    :target: http://dodopoint.jp/
