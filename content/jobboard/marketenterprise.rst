@@ -4,7 +4,7 @@
 :date: 2015/12/28 14:00
 :status: draft
 
-.. image:: /images/jobboard/me_logo_RGB_w1000.jpg
+.. image:: /images/jobboard/me_logo_RGB_w250.jpg
    :target: http://www.marketenterprise.co.jp
    :alt: 株式会社マーケットエンタープライズ
 
