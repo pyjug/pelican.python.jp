@@ -34,10 +34,12 @@ AWSのプロダクトを用いたインフラ設計・構築、Webアプリケ�
 
 
 応募の詳細につきましてはこちらのページからご応募ください。
-   http://www.aka.jp/resources/career/
+
+http://www.aka.jp/resources/career/
 
 また、wantedlyでも募集を行っております。
-   https://www.wantedly.com/projects/51208
+
+https://www.wantedly.com/projects/51208
 
 
 【必須スキル・経験】
