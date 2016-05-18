@@ -1,8 +1,7 @@
 【求人情報】Emotion Intelligence 株式会社
 ===========================================
 
-:date: 2016/05/18 17:40
-:status: draft
+:date: 2016/05/18 18:30
 
 .. image:: /images/jobboard/emin.svg
    :target: https://www.emin.co.jp/
