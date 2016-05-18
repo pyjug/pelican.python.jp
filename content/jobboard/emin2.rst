@@ -8,6 +8,7 @@
    :target: https://www.emin.co.jp/
    :alt: Emotion Intelligence 株式会社
 
+|
 
 Emotion Intelligence(以下emin; https://www.emin.co.jp/ )では、Python(scikit-learn等)を使って機械学習サービスを開発できるエンジニアを募集しています。
 
