@@ -6,7 +6,7 @@ PyCon JP 2016 Sphinxハンズオン
 
 .. raw:: html
 
-   <img src='https://www.flickr.com/photos/pyconjp/22027340636/in/album-72157659234424820/' style='margin-bottom:3em'>
+   <img src='/images/22027340636_8d2e74b3ce_z.jpg' style='margin-bottom:3em'>
     
 
 
