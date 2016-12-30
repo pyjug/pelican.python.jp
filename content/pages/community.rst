@@ -1,14 +1,96 @@
-日本のPythonコミュニティ
--------------------------
 
 :url: community
 :save_as: community/index.html
 
 
-Python 日本語メーリングリスト
-==============================
+日本のPythonコミュニティ
+-------------------------
 
-`Python 日本語メーリングリスト(python-ml-jp) <http://www.python.jp/mailman/listinfo/python-ml-jp>`_ は、Pythonの情報交換をするためのメーリングリストです。Pythonに興味をお持ちの方の参加をお待ちしています。
+.. raw:: html
+
+  <style>
+      h3 {
+          margin-top: 1em;
+          margin-bottom: 0.5em;
+      }
+      hr {
+          margin-top: 2em;
+      }
+  </style>
+
+  <p style='font-size:80%'>このページヘの登録をご希望の場合、<a href='/contact.html'>サイト運営まで</a> ご連絡ください。</p>
+
+------
+
+Python 日本語メーリングリスト |pythonmljp|
+===================================================
+
+`Python 日本語メーリングリスト(python-ml-jp) <https://groups.google.com/forum/#!forum/python-ml-jp>`_ は、Pythonの情報交換をするためのメーリングリストです。Pythonに興味をお持ちの方の参加をお待ちしています。
+
+
+.. |pythonmljp| raw:: html
+
+    <img src='http://localhost:8000/theme/images/pyjug.png'
+        style='float:right'  hspace=10 vspace=10>
+
+.. raw:: html
+
+   <div style='clear=both' />
+
+
+----
+
+Python.jp slackチャンネル
+==========================
+
+`Python.jp Slack channnel <https://pythonjp.slack.com>`_ を作成しました。情報交換・質問などにご利用ください。
+
+https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation
+
+.. raw:: html
+
+    <form
+     id='submit_inviteslackform'
+     style='margin-top:1em; padding: 1em; border:solid 1px #c0c0c0;'
+     action=''>
+        <div>pythonjp.slack.com招待メールを送信</div>
+        <div>
+            <input type='email'
+             required
+             placeholder='メールアドレスを入力してください'
+             size='40'
+             id='slackinvitemail
+            '/>
+            <button type='submit' id='submit_invideslack'>送信</button>
+        </div>
+        <div class='slackresult'></div>
+    </form>
+
+    <script>
+    $(function() {
+      $("#submit_inviteslackform").submit(function(e) {
+        event.preventDefault();
+        $.ajax({
+            url:"/cgi-bin/send_slack_inv.py",
+            type:"POST",
+            dataType: "json",
+            data: {
+                email: $("#slackinvitemail").val()
+            },
+            success: function(json) {
+                $('.slackresult').text(json['result']);
+            },
+            error: function( jqXHR, textStatus, errorThrown) {
+                alert(textStatus)
+                $('.slackresult').text(textStatus);
+            }
+        });
+      })
+    });
+
+    </script>
+
+----
 
 PyCon JP |pyconjp|
 ========================
@@ -25,12 +107,14 @@ PyCon JP |pyconjp|
 
    <div style='clear=both' />
     
+----
 
 Pythonドキュメント日本語翻訳プロジェクト
 =========================================
 
 `Pythonドキュメント日本語翻訳プロジェクト <https://code.google.com/p/python-doc-ja/>`_ は、Pythonのドキュメントを日本語に翻訳するプロジェクトです。 現在、Python 3.3 のドキュメントに対応するために活動中です。翻訳にご協力いただける方は、`参加方法 <https://code.google.com/p/python-doc-ja/#%E7%BF%BB%E8%A8%B3%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%9F%E3%81%84%E6%96%B9%E3%81%AF>`_ からご登録ください。
 
+----
 
 |pylonsjp|
 
@@ -47,6 +131,7 @@ Pylons Project JP
 
    <div style='clear=both'/>
 
+----
 
 |djangojp| djangoproject.jp
 ============================
@@ -58,6 +143,8 @@ Pylons Project JP
         style='float:right;'  hspace=10 vspace=10 width=200>
 
 `djangoproject.jp <http://djangoproject.jp/>`_ は、日本の `Django <https://www.djangoproject.com/>`_ ユーザ有志でつくられたユーザコミュニティで、2006年2月に結成されました。 djangoproject.jp ウェブサイトやメーリングリストを通じて Django に関する情報交換を行い、国内での Django (と、もちろんインデントも!)の普及に努めています。
+
+----
 
 |sphinxjp| Sphinx-Users.jp
 ===========================
@@ -82,6 +169,7 @@ SphinxはPythonの公式ドキュメントだけでなく、このSphinx-Users.j
 
     <img src='http://plone.jp/++theme++plonejp.stheme/images/logo.png' style='float:right' width='300'>
 
+----
 
 Plone User's Group Japan
 ===================================
@@ -96,6 +184,7 @@ Ploneは全オープンソースプロジェクトのトップ2%にあたり、5
    <div style='clear=both'><br/></div>
 
 
+----
 
 |hackathon| 
 
@@ -118,5 +207,3 @@ Python mini Hack-a-thon
 
 
 
-.. NOTE::
-   日本国内のPython関連コミュニティでこのページヘの登録をご希望の場合、`サイト運営まで </community/pyjug>`_ ご連絡ください。

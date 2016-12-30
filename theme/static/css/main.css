@@ -31,7 +31,7 @@ body {
 H1,H2,H3,H4,H5 {
 /*  font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif; */
   font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Arial, 'ＭＳ Ｐゴシック', sans-serif;
-  font-weight:normal;
+  font-weight: bold;
   line-height: 1.5em;
 }
 
