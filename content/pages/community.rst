@@ -59,8 +59,7 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validati
              required
              placeholder='メールアドレスを入力してください'
              size='40'
-             id='slackinvitemail
-            '/>
+             id='slackinvitemail'/>
             <button type='submit' id='submit_invideslack'>送信</button>
         </div>
         <div class='slackresult'></div>
