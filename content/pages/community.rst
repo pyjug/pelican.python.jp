@@ -43,9 +43,7 @@ Python 日本語メーリングリスト |pythonmljp|
 Python.jp slackチャンネル
 ==========================
 
-`Python.jp Slack channnel <https://pythonjp.slack.com>`_ を作成しました。情報交換・質問などにご利用ください。
-
-https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation
+`Python.jp Slack channnel <https://pythonjp.slack.com>`_ を作成しました。情報交換・質問・雑談などにご利用ください。
 
 .. raw:: html
 
