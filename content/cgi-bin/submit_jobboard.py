@@ -15,7 +15,7 @@ VALID_CHARS = set("!#$%&'*+-/=?^_`{|}~.@"+string.ascii_letters+string.digits)
 SENDMAIL = '/usr/sbin/sendmail'
 
 def check(form):
-    mailaddr = form.getfirst('mailaddr', '').strip()
+    mailaddr = form.getfirst('ppp', '').strip()
     name = form.getfirst('name', '').strip()
     url = form.getfirst('url', '').strip()[:80]
     banner = form.getfirst('banner', '').strip()[:80]

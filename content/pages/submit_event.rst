@@ -87,7 +87,7 @@ Python関連のイベントなどの掲載は、下記フォームからお申�
 
         <p>
         <label>連絡用メールアドレス <i>(必須)</i></label> (イベント情報には掲載されません)<br/>
-        <input name="mailaddr" size=80><br/>
+        <input name="ppp" size=80><br/>
         </p>
         <button type="submit">登録</button></p>
     </form>
