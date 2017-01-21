@@ -10,8 +10,8 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://www.python.jp'
-RELATIVE_URLS = False
+SITEURL = 'https://www.python.jp'
+RELATIVE_URLS = True
 
 FEED_ALL_ATOM = 'all.atom.xml'
 FEED_ALL_RSS = 'channews.rdf'
