@@ -6,7 +6,7 @@ Python 3.6 リリースパーティー
 
 .. raw:: html
 
-   <a href='https://pystudy.connpass.com/event/48361/'><img src='https://connpass-tokyo.s3.amazonaws.com/thumbs/1f/0d/1f0db6b0f30acf68e2a15017b75d0894.png' style='margin-bottom:3em'></a>
+   <a href='https://pystudy.connpass.com/event/48361/'><img src='https://connpass-tokyo.s3.amazonaws.com/thumbs/1f/0d/1f0db6b0f30acf68e2a15017b75d0894.png' class='largeimage'></a>
     
 
 日時

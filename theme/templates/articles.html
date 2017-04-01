@@ -6,14 +6,14 @@
                     <div>
                       {% include 'article_infos.html' %}
                     </div>
-
-                    <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}"><img src='/theme/images/pyjug-16.png' class='pyjug_tao' />{{ article.title }}</a></h1>
+ 
+                    <h2 class="entry-title articles_title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
                     <div class='article_summary_body'>{{ article.summary }}</div>
 
-                    <div class="btn"><a href="{{ SITEURL }}/{{ article.url }}">すべて表示 ...</a></div>
+                    <div class="article-button"><a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-info btn-sm">すべて表示 ...</a></div>
 
                 </div>
-
+                <hr>
 
                 {% if loop.length == 1 %}
                     {% include 'pagination.html' %}
@@ -28,3 +28,5 @@
     {% endfor %}
 </div>
 {% endif %}
+
+{% include 'pagination.html' %}

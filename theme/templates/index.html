@@ -1,58 +1,46 @@
 {% extends "base.html" %}
-{% block content_title %}{% endblock %}
-{% block content %}
 
+{% block jumbotron %}
 
+{% if not category %}
+{% include "top-main.html" %}
 
-{% if not articles_page.has_previous() %}
+{% else %}
 
-<div class='about'>
+  {% if category=="news" %}
+    <h1 class="sitetitle">ニュース</h1>
+  {% elif category=="jobboard" %}
+    <h1 class="sitetitle">求人情報</h1>
+  {% endif %}
 
-<h1>プログラミング言語 Python</h1>
-<blockquote><em><i>プログラミング言語 Pythonで、仕事をもっと迅速に、効率的に。Pythonを学んで、生産性の向上とコスト削減を今すぐ！</i></em></blockquote>
-<p>Pythonは、Windows、Linux/Unix、Mac OS Xなどの主要なオペレーティングシステムはもちろん、Javaや.NETなどの仮想環境でも動作するプログラミング言語です。</p>
-<p>PythonはOSIに認証された <a class="reference external" href="http://www.python.org/psf/license/">オープンソースライセンス</a> で公開されており、商用製品の開発にも無料で利用できます。</p>
-
-<hr/>
-</div>
+  {% include "submission.html" %}
 
 {% endif %}
 
+{% endblock %}
+
+
+{% block content %}
+
 {% include 'articles.html' %}
+
 
 {% endblock content %}
 
 
+
 {% block rightbox %}
+  
+  {{ super() }}
 
-          <div class="homepage-box">
-           <h4>Pythonドキュメント翻訳</h4>
-           <h5><a href="https://github.com/python-doc-ja/python-doc-ja/wiki">ドキュメント翻訳プロジェクト</a></h5>
-           <p>Pythonのドキュメントを日本語に翻訳するプロジェクトです。</p><p> 現在、Python 3.3 のドキュメントに対応するために活動中です。</p>
-          </div>
+  <div style="margin-left: 16px;">
+  <iframe src="https://www.google.com/calendar/embed?showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;hl=ja&amp;bgcolor=%23FFFFFF&amp;src=kj670le78ju5alcbt1khect5ks%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=Asia%2FTokyo" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no">
+    <a href="http://www.google.com/calendar/ical/kj670le78ju5alcbt1khect5ks%40group.calendar.google.com/public/basic.ics">
+      Python Calendar Japan
+    </a>
+  </iframe>
+  </div>
 
-          <div class="homepage-box">
-           <h4>slackチャンネル</h4>
-           <h5><a href="https://pythonjp.slack.com">Python.jp slackチャンネル</a></h5>
-           <p>情報交換・質問・雑談などにご利用ください。<a href='http://www.python.jp/community/#python-jp-slack'>slack登録ページ</a>より参加できます。</p>
-          </div>
-
-          <div class="homepage-box">
-           <h4>メーリングリスト</h4>
-           <h5><a href="https://groups.google.com/forum/#!forum/python-ml-jp">Python日本語メーリングリスト</a></h5>
-           <p>日本語でオブジェクト指向言語Pythonの情報交換をするためのメーリングリストです。</p><p>Pythonに興味をお持ちの方の参加をお待ちしています。</p>
-          </div>
+{% endblock %}
 
 
-
-
-    <div style="align:center; padding-top: 1.0em; padding-left: 5pt">
-      <iframe src="https://www.google.com/calendar/embed?showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;hl=ja&amp;bgcolor=%23FFFFFF&amp;src=kj670le78ju5alcbt1khect5ks%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=Asia%2FTokyo" style="border: 0" width="200" height="300" frameborder="0" scrolling="no">
-        <a href="http://www.google.com/calendar/ical/kj670le78ju5alcbt1khect5ks%40group.calendar.google.com/public/basic.ics">
-          Python Calendar Japan
-        </a>
-      </iframe>
-    </div>
-
-
-{% endblock rightbox %}
