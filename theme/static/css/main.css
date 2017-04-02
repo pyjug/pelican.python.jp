@@ -8,6 +8,15 @@ nav {
   margin: 0.8em;
 }
 
+
+.ibox {
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
+}
+
 .topmenu .menublock {
   display: inline-block;
   padding-left: .5em;
@@ -27,7 +36,7 @@ nav {
 }
 
 .jumbotron {
-  padding: 3em 0em 2em 0em;
+  padding: 2em 0em 1em 0em;
   margin-bottom: 0.5em;
 }
 
@@ -51,10 +60,22 @@ nav {
   margin-bottom: 1em;
 }
 
+.right-box h2 {
+  margin: 0;
+  color: #234764;
+  font-size: 1em;
+}
+
 .right-box .btn {
   font-size: 12px;
   padding: 5px;
 }
+
+.right-box .ibox {
+  margin-right: 10px;
+  margin-bottom: 0.8em;
+}
+
 
 .published {
   font-weight: bold;
@@ -80,7 +101,6 @@ nav {
 
 .article-button {
 }
-
 
 H1,H2,H3,H4,H5 {
 /*  font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif; */
@@ -125,3 +145,4 @@ H4
 blockquote {
   margin-left: 2em;
 }
+
