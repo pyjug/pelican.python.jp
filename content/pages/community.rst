@@ -1,10 +1,8 @@
 
 :url: community
 :save_as: community/index.html
+:title: 日本のPythonコミュニティ
 
-
-日本のPythonコミュニティ
--------------------------
 
 .. raw:: html
 
@@ -18,27 +16,6 @@
       }
   </style>
 
-  <p style='font-size:80%'>このページヘの登録をご希望の場合、<a href='/contact.html'>サイト運営まで</a> ご連絡ください。</p>
-
-------
-
-Python 日本語メーリングリスト |pythonmljp|
-===================================================
-
-`Python 日本語メーリングリスト(python-ml-jp) <https://groups.google.com/forum/#!forum/python-ml-jp>`_ は、Pythonの情報交換をするためのメーリングリストです。Pythonに興味をお持ちの方の参加をお待ちしています。
-
-
-.. |pythonmljp| raw:: html
-
-    <img src='http://localhost:8000/theme/images/pyjug.png'
-        style='float:right'  hspace=10 vspace=10>
-
-.. raw:: html
-
-   <div style='clear=both' />
-
-
-----
 
 Python.jp slackチャンネル
 ==========================
@@ -89,6 +66,24 @@ Python.jp slackチャンネル
 
 ----
 
+Python 日本語メーリングリスト |pythonmljp|
+===================================================
+
+`Python 日本語メーリングリスト(python-ml-jp) <https://groups.google.com/forum/#!forum/python-ml-jp>`_ は、Pythonの情報交換をするためのメーリングリストです。Pythonに興味をお持ちの方の参加をお待ちしています。
+
+
+.. |pythonmljp| raw:: html
+
+    <img src='http://localhost:8000/theme/images/pyjug.png'
+        style='float:right'  hspace=10 vspace=10>
+
+.. raw:: html
+
+   <div style='clear=both'><br/></div>
+
+
+----
+
 PyCon JP |pyconjp|
 ========================
 
@@ -102,14 +97,14 @@ PyCon JP |pyconjp|
 
 .. raw:: html
 
-   <div style='clear=both' />
+   <div style='clear=both' ></div> 
     
 ----
 
 Pythonドキュメント日本語翻訳プロジェクト
 =========================================
 
-`Pythonドキュメント日本語翻訳プロジェクト <https://code.google.com/p/python-doc-ja/>`_ は、Pythonのドキュメントを日本語に翻訳するプロジェクトです。 現在、Python 3.3 のドキュメントに対応するために活動中です。翻訳にご協力いただける方は、`参加方法 <https://code.google.com/p/python-doc-ja/#%E7%BF%BB%E8%A8%B3%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%9F%E3%81%84%E6%96%B9%E3%81%AF>`_ からご登録ください。
+`Pythonドキュメント日本語翻訳プロジェクト <https://github.com/python-doc-ja/python-doc-ja>`_ は、Pythonのドキュメントを日本語に翻訳するプロジェクトです。
 
 ----
 
@@ -126,7 +121,7 @@ Pylons Project JP
 
 .. raw:: html
 
-   <div style='clear=both'/>
+   <div style='clear=both' ><br></div> 
 
 ----
 
@@ -140,6 +135,11 @@ Pylons Project JP
         style='float:right;'  hspace=10 vspace=10 width=200>
 
 `djangoproject.jp <http://djangoproject.jp/>`_ は、日本の `Django <https://www.djangoproject.com/>`_ ユーザ有志でつくられたユーザコミュニティで、2006年2月に結成されました。 djangoproject.jp ウェブサイトやメーリングリストを通じて Django に関する情報交換を行い、国内での Django (と、もちろんインデントも!)の普及に努めています。
+
+
+.. raw:: html
+
+   <div style='clear=both' ><br></div> 
 
 ----
 
@@ -160,13 +160,14 @@ SphinxはPythonの公式ドキュメントだけでなく、このSphinx-Users.j
 
    <div style='clear=both'><br/></div>
 
+----
+
 |plonejp| 
 
 .. |plonejp| raw:: html
 
     <img src='http://plone.jp/++theme++plonejp.stheme/images/logo.png' style='float:right' width='300'>
 
-----
 
 Plone User's Group Japan
 ===================================
