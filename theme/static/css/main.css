@@ -6,19 +6,18 @@ body {
 
 nav {
   margin: 0.8em;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+
+  -webkit-justify-content: space-between; /* Safari */
+  justify-content:         space-between;
 }
 
-
-.ibox {
-  display: inline-block;
-}
-
-.center {
-  text-align: center;
+.topmenu {
+  align-items:center;
 }
 
 .topmenu .menublock {
-  display: inline-block;
   padding-left: .5em;
   padding-right: .5em;
 }
@@ -29,10 +28,27 @@ nav {
   padding-right: .5em;
 }
 
-
 .topmenu .searchform {
+  height: 100%;
+  vertical-align: middle;
+}
+
+.topmenu  .form-control {
+  display: inline;
+  width: 200px;
+}
+
+.topmenu  .btn {
+  display: inline;
+  }
+
+
+.ibox {
   display: inline-block;
-  padding: 0.5em;
+}
+
+.center {
+  text-align: center;
 }
 
 .jumbotron {
@@ -84,7 +100,7 @@ nav {
 }
 
 .entry-title {
-  font-size: 1.8em;
+  font-size: 1.5em;
   padding: 0.1em 0em 1em;
 }
 
@@ -95,7 +111,7 @@ nav {
 
 
 .articles_title {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin-top: 0.5em;
 }
 

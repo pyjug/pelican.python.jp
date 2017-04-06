@@ -26,25 +26,23 @@
   <title>python.jp</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
 
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+<script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery-3.1.1.min.js">
+</script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </head>
 
 <body id="index" class="home">
 
 
-  <nav class="topmenu clearfix">
-    <div class="menublock" style="text-align: right">
+
+  <nav class="topmenu" style="">
+    <div class="menublock">
       <a href="/" class="menulink"><img src="http://www.python.jp/theme/images/pyjug.png"></a>
       <a href="/" class="menulink">Home</a>
       <a href="/category/news.html" class="menulink">ニュース</a>
@@ -52,17 +50,17 @@
       <a href="/contact.html" class="menulink">Contact</a>
     </div>
 
-    <form method="get" action="https://google.co.jp/search" id="searchform" name="searchform" _lpchecked="1"
-          class="form-inline my-2 my-lg-0 searchform" style="float:right">
-        <div id="search">
-          <input type="hidden" id="domains" name="domains" value="python.jp">
-          <input type="hidden" id="sitesearch" name="sitesearch" value="python.jp">
-          <input type="hidden" id="sourceid" name="sourceid" value="google-search">
 
-          <input type="text" class="form-control mr-sm-2" name="q" id="q" placeholder="Search">
-          <input type="submit" value="検索" class="input-button btn btn-outline-primary my-2 my-sm-0" name="submit" id="submit">
-        </div>
-      </form>
+    <form method="get" action="https://google.co.jp/search" id="searchform" name="searchform"
+            class="searchfaorm">
+      <input type="hidden" id="domains" name="domains" value="python.jp">
+      <input type="hidden" id="sitesearch" name="sitesearch" value="python.jp">
+      <input type="hidden" id="sourceid" name="sourceid" value="google-search">
+
+      <input class="form-control" type="text" placeholder="Search">
+      <button class="btn btn-outline-primary" style="vertical-align:baseline;" type="submit">Search</button>
+
+    </form>
   </nav>
 
 
