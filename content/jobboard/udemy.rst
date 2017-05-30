@@ -55,11 +55,11 @@ benesse_udemy@mail.benesse.co.jp
 【人気講座例】
 ---------------------------------
 
-- みんなのAI講座 ゼロからPythonで学ぶ人工知能と機械学習
+- `みんなのAI講座 ゼロからPythonで学ぶ人工知能と機械学習 <https://www.udemy.com/learning-ai/?aff_code=Ewh3Y11STX4GQBpxMkBPbG1RGXFfVVh8Al4ZeE5TQnYBRhFwXD5XMRM=&utm_source=pythonjp&utm_campaign=jppythonjp_17_05&utm_medium=com>`_
 
-- 【世界で5万人が受講】実践 Python データサイエンス
+- `【世界で5万人が受講】実践 Python データサイエンス習 <https://www.udemy.com/python-jp/?aff_code=Ewh3Y11STX4GQBpxMkBPbG1RGXFfVVh8Al4ZeE5TQnYBRhFwXD5XMRM=&utm_source=pythonjp&utm_campaign=jppythonjp_17_05&utm_medium=com>`_
 
-- 【4日で体験】 TensorFlow x Python 3 で学ぶディープラーニング入門
+- `【4日で体験】 TensorFlow x Python 3 で学ぶディープラーニング入門習 <https://www.udemy.com/tensorflow/?aff_code=Ewh3Y11STX4GQBpxMkBPbG1RGXFfVVh8Al4ZeE5TQnYBRhFwXD5XMRM=&utm_source=pythonjp&utm_campaign=jppythonjp_17_05&utm_medium=com>`_
 
  
 
