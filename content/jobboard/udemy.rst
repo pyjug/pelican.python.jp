@@ -4,7 +4,6 @@
 ==========================================================================
 
 :date: 2017/05/30
-:status: draft
 
 .. image:: /images/jobboard/Udemy_logo_medium_green.jpg
    :target: http://www.benesse.co.jp/udemy/teach?aff_code=Ewh3Y11STX4GQBpxMkBPbG1RGXFfVVh8Al4ZeE5TQnYBRhFwXD5XMRM=&utm_source=pythonjp&utm_campaign=teach&utm_medium=com
