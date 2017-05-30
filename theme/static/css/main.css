@@ -101,7 +101,7 @@ nav {
 
 .entry-title {
   font-size: 1.5em;
-  padding: 0.1em 0em 1em;
+  padding: 0.1em 0em 0.3em;
 }
 
 .largeimage {
@@ -141,7 +141,7 @@ H2
   font-size: 120%;
 
   color: #366D9C;
-  margin: 1.5em 0 0.5em 0;
+  margin: 1em 0 0.5em 0;
 }
 
 H3
@@ -162,3 +162,9 @@ blockquote {
   margin-left: 2em;
 }
 
+
+#contentinfo {
+  margin-top: 2em;
+  margin-right: 2em;
+  text-align: right;
+}
