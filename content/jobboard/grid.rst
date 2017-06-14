@@ -8,7 +8,7 @@
 .. image:: /images/jobboard/grid.png
    :target: http://www.gridpredict.jp/
    :alt: 株式会社グリッド
-   :width: 600px
+   :width: 500px
 
 
 
